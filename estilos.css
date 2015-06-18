@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    display: block;
+    width: 200px;
+    margin: 200px auto;
+    text-align: center;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+label {
+    font-weight: 500;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    line-height: normal;
+}
+.switch input {
+    position: absolute;
+    opacity: 0;
+}
+.switch {
+    vertical-align: middle;
+    margin-bottom: 0;
+    line-height: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.switch input~.switch {
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fafafa;
+    -webkit-box-shadow: inset 0 0 0 1px #e5e5e5;
+    box-shadow: inset 0 0 0 1px #e5e5e5;
+    cursor: pointer;
+    height: 24px;
+    width: 38.4px;
+    border-radius: 28px;
+    -webkit-transition: border .25s .15s, -webkit-box-shadow .25s .3s, padding .25s;
+    -o-transition: border .25s .15s, box-shadow .25s .3s, padding .25s;
+    transition: border .25s .15s, box-shadow .25s .3s, padding .25s;
+}
+.switch input:checked~.switch {
+    border-color: #4caf50;
+    -webkit-box-shadow: inset 0 0 0 .6em #4caf50;
+    box-shadow: inset 0 0 0 .6em #4caf50;
+    -webkit-transition: border .25s, -webkit-box-shadow .25s, padding .25s .15s;
+    -o-transition: border .25s, box-shadow .25s, padding .25s .15s;
+    transition: border .25s, box-shadow .25s, padding .25s .15s;
+}
+.switch input~.switch:after {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 24px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .01), 0 2px 4px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .01), 0 2px 4px rgba(0, 0, 0, .05);
+    content: '';
+    display: block;
+    height: 24px;
+    width: 24px;
+    left: 0;
+    top: 0;
+    -webkit-transition: border .25s .15s, left .25s .1s, right .15s .175s;
+    -o-transition: border .25s .15s, left .25s .1s, right .15s .175s;
+    transition: border .25s .15s, left .25s .1s, right .15s .175s;
+}
+.switch input:checked~.switch:after {
+    border-color: #4caf50;
+    left: .6em;
+    right: 0;
+    -webkit-transition: border .25s, left .15s .25s, right .25s .175s;
+    -o-transition: border .25s, left .15s .25s, right .25s .175s;
+    transition: border .25s, left .15s .25s, right .25s .175s;
+}
+.switch.switch-primary input:checked~.switch {
+    border-color: #2196f3;
+    -webkit-box-shadow: inset 0 0 0 .6em #2196f3;
+    box-shadow: inset 0 0 0 .6em #2196f3;
+}
+.switch.switch-success input:checked~.switch {
+    border-color: #4caf50;
+    -webkit-box-shadow: inset 0 0 0 .6em #4caf50;
+    box-shadow: inset 0 0 0 .6em #4caf50;
+}
+.switch.switch-warning input:checked~.switch {
+    border-color: #ffeb3b;
+    -webkit-box-shadow: inset 0 0 0 .6em #ffeb3b;
+    box-shadow: inset 0 0 0 .6em #ffeb3b;
+}
+.switch.switch-danger input:checked~.switch {
+    border-color: #f44336;
+    -webkit-box-shadow: inset 0 0 0 .6em #f44336;
+    box-shadow: inset 0 0 0 .6em #f44336;
+}
+.switch.switch-primary input:checked~.switch:after {
+    border-color: #2196f3;
+}
+.switch.switch-success input:checked~.switch:after {
+    border-color: #4caf50;
+}
+.switch.switch-warning input:checked~.switch:after {
+    border-color: #ffeb3b;
+}
+.switch.switch-danger input:checked~.switch:after {
+    border-color: #f44336;
+}
