@@ -2,4 +2,4 @@
 
 #### Transformando a input checkbox em um switch usando apenas CSS
 
-[See in action](http://williankeller.github.io/CheckboxSwitch/)
+[See in action](http://williankeller.github.io/checkbox-switch)
